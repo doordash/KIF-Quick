@@ -1,12 +1,12 @@
 PODS:
   - KIF-Quick (0.1.0)
-  - Nimble (5.1.1)
-  - Quick (0.10.0)
+  - Nimble (4.1.0)
+  - Quick (0.9.3)
 
 DEPENDENCIES:
   - KIF-Quick (from `../`)
-  - Nimble
-  - Quick
+  - Nimble (= 4.1.0)
+  - Quick (= 0.9.3)
 
 EXTERNAL SOURCES:
   KIF-Quick:
@@ -14,9 +14,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KIF-Quick: e0e03d3bc1117b5735fed5221d714cf20995c66c
-  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
-  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
+  Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
+  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
 
-PODFILE CHECKSUM: cd1d49c857c358c7ab7b04f3ee0583f2e437fb6c
+PODFILE CHECKSUM: d35253ec2518d7a5a2493fc69b76f5bd3de38c09
 
 COCOAPODS: 1.1.1

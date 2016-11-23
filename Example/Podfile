@@ -6,7 +6,7 @@ target 'KIF-Quick_Example' do
   target 'KIF-Quick_Tests' do
     inherit! :search_paths
 
-    pod 'Quick'
-    pod 'Nimble'
+    pod 'Quick', '0.9.3'    # Swift 2.3 compatible
+    pod 'Nimble', '4.1.0'   # Swift 2.3 compatible
   end
 end
