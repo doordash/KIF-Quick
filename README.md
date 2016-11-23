@@ -18,12 +18,12 @@ KIF-Quick is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "KIF-Quick"
+pod 'KIF-Quick'
 ```
 
 ## Author
 
-Paul Zabelin, paulz@doordash.com
+[Paul Zabelin](https://github.com/paulz)
 
 ## License
 
