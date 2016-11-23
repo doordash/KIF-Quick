@@ -2,21 +2,21 @@
 
 import Quick
 import Nimble
-import KIF-Quick
+//import KIF-Quick
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
         describe("these will fail") {
 
-            it("can do maths") {
+            xit("can do maths") {
                 expect(1) == 2
             }
 
-            it("can read") {
+            xit("can read") {
                 expect("number") == "string"
             }
 
-            it("will eventually fail") {
+            xit("will eventually fail") {
                 expect("time").toEventually( equal("done") )
             }
             
