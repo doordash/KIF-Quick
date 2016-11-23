@@ -1,42 +1,19 @@
-#
-# Be sure to run `pod lib lint KIF-Quick.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'KIF-Quick'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KIF-Quick.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'Enable Behaviour-Driven Integration Tests built on KIF using Quick syntax'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Write Quick specs to drive KIF actors through user interface actions.
+		   * capture screenshots for failing tests
+		   * share common setup using spec context  
                        DESC
-
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/KIF-Quick'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/doordash/KIF-Quick'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Paul Zabelin' => 'paulz@doordash.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/KIF-Quick.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
+  s.source           = { :git => 'https://github.com/doordash/KIF-Quick.git', :tag => s.version.to_s }
+  s.platform     = :ios, '8.0'
   s.source_files = 'KIF-Quick/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'KIF-Quick' => ['KIF-Quick/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.framework = 'XCTest'
+  s.dependency 'KIF', '~> 3.0'
+  s.dependency 'Quick', '~> 0.9.3'
 end
