@@ -1,0 +1,22 @@
+{
+  "name": "KIF-Quick",
+  "version": "0.1.0",
+  "summary": "A short description of KIF-Quick.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/KIF-Quick",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Paul Zabelin": "paulz@doordash.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/KIF-Quick.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KIF-Quick/Classes/**/*"
+}

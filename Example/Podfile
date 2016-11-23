@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'KIF-Quick_Example' do
+  pod 'KIF-Quick', :path => '../'
+
+  target 'KIF-Quick_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick'
+    pod 'Nimble'
+  end
+end

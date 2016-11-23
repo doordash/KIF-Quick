@@ -1,0 +1,6 @@
+framework module Pods_KIF_Quick_Tests {
+  umbrella header "Pods-KIF-Quick_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
