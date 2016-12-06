@@ -1,24 +1,9 @@
-//
-//  ViewController.swift
-//  KIF-Quick
-//
-//  Created by Paul Zabelin on 11/22/2016.
-//  Copyright (c) 2016 Paul Zabelin. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func onTap(sender: AnyObject) {
+        if let button = sender as? UIButton {
+            button.setTitle("Thank you!", forState: .Normal)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
-
