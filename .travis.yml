@@ -1,5 +1,17 @@
 osx_image: xcode8.1
 language: objective-c
+cache:
+  - bundler
+  - cocoapods
+podfile: Example/Podfile
+before_install:
+  - gem update --system
+  - gem --version
+before_script:
+  - gem install bundler
+  - gem install xcpretty
+  - bundle
 script:
-- set -o pipefail && xcodebuild -workspace Example/KIF-Quick.xcworkspace -scheme KIF-Quick-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' ONLY_ACTIVE_ARCH=NO test | xcpretty
-- pod lib lint
+  - pod --version
+  - pod lib lint
+  - set -o pipefail && xcodebuild -workspace Example/KIF-Quick.xcworkspace -scheme KIF-Quick-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' ONLY_ACTIVE_ARCH=NO test | xcpretty
