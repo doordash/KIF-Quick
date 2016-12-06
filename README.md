@@ -1,7 +1,7 @@
 # KIF-Quick
 Enable Behaviour-Driven Integration Tests built on KIF using Quick syntax, supports Xcode 8.1
 
-[![CI Status](http://img.shields.io/travis/Paul Zabelin/KIF-Quick.svg?style=flat)](https://travis-ci.org/Paul Zabelin/KIF-Quick)
+[![CI Status](http://img.shields.io/travis/doordash/KIF-Quick.svg?style=flat)](https://travis-ci.org/doordash/KIF-Quick)
 [![Version](https://img.shields.io/cocoapods/v/KIF-Quick.svg?style=flat)](http://cocoapods.org/pods/KIF-Quick)
 [![License](https://img.shields.io/cocoapods/l/KIF-Quick.svg?style=flat)](http://cocoapods.org/pods/KIF-Quick)
 [![Platform](https://img.shields.io/cocoapods/p/KIF-Quick.svg?style=flat)](http://cocoapods.org/pods/KIF-Quick)
