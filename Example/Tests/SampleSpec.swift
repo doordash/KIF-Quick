@@ -10,19 +10,11 @@ class SampleSpec: KIFSpec {
                 it("should have a button") {
                     viewTester().usingLabel("Tap Me").waitForView()
                 }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    dispatch_async(dispatch_get_main_queue()) {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        NSThread.sleepForTimeInterval(0.5)
-                        expect(time) == "done"
-
-                        done()
+                
+                context("tap") {
+                    it("should change title") {
+                        viewTester().usingLabel("Tap Me").tap()
+                        viewTester().usingLabel("Thank you!").waitForView()
                     }
                 }
             }
