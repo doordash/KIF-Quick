@@ -1,5 +1,7 @@
 # KIF-Quick
-Enable Behaviour-Driven Integration Tests built on KIF using Quick syntax, supports Xcode 8.1
+Write [KIF](https://github.com/kif-framework/KIF) tests [Quick](https://github.com/Quick/Quick) style in Swift!
+
+KIF-Quick is a bridge between the Keep It Functional and Quick frameworks. It allows you to perform KIF actions using Quick syntax.
 
 [![Swift][swift-badge]][swift-url]
 [![Travis][travis-badge]][travis-url]
