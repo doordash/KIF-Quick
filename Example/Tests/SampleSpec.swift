@@ -1,5 +1,4 @@
 import Quick
-import Nimble
 import KIF_Quick
 
 class SampleSpec: KIFSpec {
@@ -12,7 +11,7 @@ class SampleSpec: KIFSpec {
                 }
                 
                 context("tap") {
-                    it("should change title") {
+                    it("should be grateful") {
                         viewTester().usingLabel("Tap Me").tap()
                         viewTester().usingLabel("Thank you!").waitForView()
                     }
