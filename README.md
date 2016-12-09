@@ -11,11 +11,16 @@ KIF-Quick is a bridge between the Keep It Functional and Quick frameworks. It al
 
 ## Installation
 
-KIF-Quick is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+KIF-Quick is available through [CocoaPods](http://cocoapods.org). To install it, simply add `pod 'KIF-Quick'` to your test target in Podfile:
 
 ```ruby
-pod 'KIF-Quick'
+target 'Your App' do
+  ...
+end
+
+target 'Acceptance Tests' do
+  pod 'KIF-Quick'
+end
 ```
 
 ## Usage
