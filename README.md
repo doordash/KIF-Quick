@@ -22,6 +22,7 @@ target 'Acceptance Tests' do
   pod 'KIF-Quick'
 end
 ```
+this will also install KIF and Quick frameworks as dependencies ensuring compatible versions.
 
 ## Usage
 `import KIF_Quick` in your specs and start writing KIF tests using Quick describe/context and it blocks.  See the [SampleSpec.m](https://github.com/doordash/KIF-Quick/blob/master/Example/Tests/SampleSpec.swift) example:
