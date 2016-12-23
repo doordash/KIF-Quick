@@ -15,5 +15,5 @@ Write Quick specs to drive KIF actors through user interface actions.
   s.source_files = 'KIF-Quick/Classes'
   s.framework = 'XCTest'
   s.dependency 'KIF', '~> 3.0'
-  s.dependency 'Quick', '~> 0.9.3'
+  s.dependency 'Quick', '~> 1.0.0'
 end
