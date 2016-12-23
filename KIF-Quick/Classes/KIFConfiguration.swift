@@ -6,7 +6,7 @@ class KIFConfiguration: QuickConfiguration {
         KIFEnableAccessibility()
     }
 
-    override class func configure(configuration: Configuration) {
+    override class func configure(_ configuration: Configuration) {
         enableAccessibilityBeforeSpecClassSetup()
     }
 }
