@@ -73,6 +73,20 @@ SampleSpec
 ```
 where nested Quick contexts concatenated to give full KIF test name. This allows to pinpoint location of possible failures when they happen and have readable English like sentenses describing the functionality.
 
+## Swift Version
+
+If your project is still using Swift 2 you can can use previous version of KIF-Quick. Use the table below to determine which versions of KIF-Quick are compatible with your project.
+
+|Swift version        |KIF-Quick version|
+|:--------------------|:---------------|
+|Swift 3              |v1.1.0 or later |
+|Swift 2.2 / Swift 2.3|v1.0.0          |
+
+or you can specify this branch in your Podfile:
+```
+  pod 'KIF-Quick', :git => 'https://github.com/doordash/KIF-Quick.git', :branch => 'swift2.3'
+```
+
 ## Author
 
 [Paul Zabelin](https://github.com/paulz)
