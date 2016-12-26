@@ -3,7 +3,7 @@ PODS:
     - KIF/Core (= 3.5.1)
   - KIF-Quick (1.0.0):
     - KIF (~> 3.0)
-    - Quick (~> 1.0.0)
+    - Quick (~> 1.0)
   - KIF/Core (3.5.1)
   - Quick (1.0.0)
 
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KIF: 082eb65279e51c3092923802849eb796a04982ab
-  KIF-Quick: 2991d5c158800c29de332ada9ca958acda720b30
+  KIF-Quick: 990986980de04b297bd7e7fe4b3879d8f00e9387
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
 
 PODFILE CHECKSUM: 48447a2c9dab6d7233a99da1a7a9670158e4eb0e
