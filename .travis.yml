@@ -7,6 +7,7 @@ podfile: Example/Podfile
 before_install:
   - gem update --system
   - gem --version
+  - xcrun simctl delete 22FA2149-1241-469C-BF6D-462D3837DB72 || echo "remove workaround to delete duplicate simulator, see https://github.com/travis-ci/travis-ci/issues/7031#issuecomment-268317546"
 before_script:
   - gem install bundler
   - gem install xcpretty
