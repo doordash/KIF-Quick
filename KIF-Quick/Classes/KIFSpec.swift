@@ -38,11 +38,6 @@ public class KIFSpec: QuickSpec {
         super.tearDown()
     }
 
-    override public func failWithException(exception: NSException!, stopTest stop: Bool) {
-        UIView.printViewHierarchy()
-        super.failWithException(exception, stopTest: stop)
-    }
-
     override public func setUp() {
         super.setUp()
         continueAfterFailure = false
