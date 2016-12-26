@@ -3,6 +3,7 @@ import KIF
 
 /**
  creates KIFUITestActor for a KIFSpec
+ use it to interact with UI
  */
 public func tester(file: String = #file, _ line: Int = #line) -> KIFUITestActor {
     return KIFUITestActor(inFile: file, atLine: line, delegate: KIFSpec.getCurrentKIFActorDelegate())
@@ -10,6 +11,7 @@ public func tester(file: String = #file, _ line: Int = #line) -> KIFUITestActor 
 
 /**
  creates KIFUIViewTestActor for a KIFSpec
+ use it to interact with UI and chain view selectors and predicates
  */
 public func viewTester(file: String = #file, _ line: Int = #line) -> KIFUIViewTestActor {
     return KIFUIViewTestActor(inFile: file, atLine: line, delegate: KIFSpec.getCurrentKIFActorDelegate())
@@ -17,6 +19,7 @@ public func viewTester(file: String = #file, _ line: Int = #line) -> KIFUIViewTe
 
 /**
  creates KIFSystemTestActor for a KIFSpec
+ use it to interact with application without involving UI
  */
 public func system(file: String = #file, _ line: Int = #line) -> KIFSystemTestActor {
     return KIFSystemTestActor(inFile: file, atLine: line, delegate: KIFSpec.getCurrentKIFActorDelegate())
@@ -29,7 +32,6 @@ public func system(file: String = #file, _ line: Int = #line) -> KIFSystemTestAc
 
  KIFSpec passes the KIF actor failure to Quick to be reported
  */
-
 open class KIFSpec: QuickSpec {
     private static var currentKIFActorDelegate: KIFTestActorDelegate?
 
@@ -49,16 +51,25 @@ open class KIFSpec: QuickSpec {
         return delegate!
     }
 
+    /**
+     if test failure happens while in setUp blame prepare not test
+     */
     override open class func setUp() {
         super.setUp()
         currentKIFActorDelegate = Prepare()
     }
 
+    /**
+     reset delegate to avoid blaming wrong test
+     */
     override open class func tearDown() {
         currentKIFActorDelegate = nil
         super.tearDown()
     }
 
+    /**
+     prepare KIFTestActorDelegate to be this Quick spec
+     */
     override open func setUp() {
         super.setUp()
         continueAfterFailure = false
