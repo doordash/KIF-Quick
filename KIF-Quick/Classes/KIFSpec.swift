@@ -1,5 +1,4 @@
 import Quick
-//import Nimble
 import KIF
 
 public func tester(file: String = #file, _ line: Int = #line) -> KIFUITestActor {
