@@ -77,10 +77,10 @@ where nested Quick contexts concatenated to give full KIF test name. This allows
 
 If your project is still using Swift 2 you can can use previous version of KIF-Quick. Use the table below to determine which versions of KIF-Quick are compatible with your project.
 
-|Swift version        |KIF-Quick version|
-|:--------------------|:---------------|
-|Swift 3              |v1.1.0 or later |
-|Swift 2.2 / Swift 2.3|v1.0.0          |
+|Swift version        |KIF-Quick version|Podfile|git branch|
+|:--------------------|:---------------|:---------------|:---------------|
+|Swift 3              |v1.1.0 or later |pod 'KIF-Quick'|master|
+|Swift 2.2 / Swift 2.3|v1.0.1 or later |pod 'KIF-Quick', '~> 1.0.0'|swift2.3|
 
 or you can specify this branch in your Podfile:
 ```
