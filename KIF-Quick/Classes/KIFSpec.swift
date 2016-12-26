@@ -29,7 +29,8 @@ public func system(file: String = #file, _ line: Int = #line) -> KIFSystemTestAc
 
  KIFSpec passes the KIF actor failure to Quick to be reported
  */
-public class KIFSpec: QuickSpec {
+
+open class KIFSpec: QuickSpec {
     private static var currentKIFActorDelegate: KIFTestActorDelegate?
 
     private class Prepare: KIFSpec {
@@ -41,24 +42,24 @@ public class KIFSpec: QuickSpec {
     /**
      returns current QuickSpec as KIFTestActorDelegate
      */
-    class func getCurrentKIFActorDelegate() -> KIFTestActorDelegate {
+    fileprivate class func getCurrentKIFActorDelegate() -> KIFTestActorDelegate {
         let delegate = KIFSpec.currentKIFActorDelegate
         precondition(delegate != nil, "Test actor delegate should be configured. " +
             "Did you attempt to use a KIFTestActor outside of a test?")
         return delegate!
     }
 
-    override public class func setUp() {
+    override open class func setUp() {
         super.setUp()
         currentKIFActorDelegate = Prepare()
     }
 
-    override public class func tearDown() {
+    override open class func tearDown() {
         currentKIFActorDelegate = nil
         super.tearDown()
     }
 
-    override public func setUp() {
+    override open func setUp() {
         super.setUp()
         continueAfterFailure = false
         KIFSpec.currentKIFActorDelegate = self
