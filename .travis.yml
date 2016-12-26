@@ -14,4 +14,4 @@ before_script:
 script:
   - bundle exec pod --version
   - bundle exec pod lib lint
-  - set -o pipefail && xcodebuild -workspace Example/KIF-Quick.xcworkspace -scheme KIF-Quick-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' ONLY_ACTIVE_ARCH=NO test | xcpretty
+  - set -o pipefail && xcodebuild -workspace Example/KIF-Quick.xcworkspace -scheme KIF-Quick-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' ONLY_ACTIVE_ARCH=NO test | xcpretty
