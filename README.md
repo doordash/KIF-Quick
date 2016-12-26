@@ -81,7 +81,7 @@ where nested Quick contexts concatenated to give full KIF test name. This allows
 
 KIF-Quick is available under the MIT license. See the LICENSE file for more info.
 
-[swift-badge]: https://img.shields.io/badge/Swift-2.3-orange.svg?style=flat
+[swift-badge]: https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat
 [swift-url]: https://swift.org
 [travis-badge]: http://img.shields.io/travis/doordash/KIF-Quick.svg?style=flat
 [travis-url]: https://travis-ci.org/doordash/KIF-Quick
