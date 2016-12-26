@@ -87,9 +87,14 @@ or you can specify this branch in your Podfile:
   pod 'KIF-Quick', :git => 'https://github.com/doordash/KIF-Quick.git', :branch => 'swift2.3'
 ```
 
+## Contributors
+
+https://github.com/doordash/KIF-Quick/graphs/contributors
+
 ## Author
 
 [Paul Zabelin](https://github.com/paulz)
+
 
 ## License
 
