@@ -1,7 +1,7 @@
 # KIF-Quick
 Write [KIF](https://github.com/kif-framework/KIF) tests [Quick](https://github.com/Quick/Quick) style in Swift!
 
-KIF-Quick is a bridge between the Keep It Functional and Quick frameworks. It allows you to perform KIF actions using Quick syntax.
+KIF-Quick is a bridge between the Keep It Functional and Quick frameworks. It allows you to perform KIF actions using Quick syntax. See [wiki/Why-KIF-Quick](https://github.com/doordash/KIF-Quick/wiki/Why-KIF-Quick)
 
 [![Swift][swift-badge]][swift-url]
 [![Travis][travis-badge]][travis-url]
