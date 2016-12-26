@@ -61,6 +61,18 @@ xcodebuild -workspace Example/KIF-Quick.xcworkspace -scheme KIF-Quick-Example -s
 ```
 This is how [Travis][travis-url] runs them to keep us honest, see [.travis.yml](https://github.com/doordash/KIF-Quick/blob/master/.travis.yml)
 
+And you should see test output similar to this
+```
+▸ Test Succeeded
+All tests
+Test Suite KIF-Quick_Tests.xctest started
+SampleSpec
+    ✓ example_app__main_view__should_have_a_button (0.003 seconds)
+    ✓ example_app__main_view__tap__should_be_grateful (0.581 seconds)
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.584 (0.586) seconds
+```
+where nested Quick contexts concatenated to give full KIF test name. This allows to pinpoint location of possible failures when they happen and have readable English like sentenses describing the functionality.
+
 ## Author
 
 [Paul Zabelin](https://github.com/paulz)
