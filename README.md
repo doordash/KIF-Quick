@@ -48,8 +48,18 @@ class MainViewSpec: KIFSpec {
 
 ## Example
 
-To run the sample spec in example project, clone the repo, and run `pod install` from the Example directory first.
+To run the sample spec in example project, clone the repo, and open Example workspace:
+```
+open Example/KIF-Quick.xcworkspace
+```
+Select simulator and run tests as usual by pressing <kbd>Command</kbd> + <kbd>U</kbd>
 
+### Command Line
+Run tests using xcodebuild:
+```
+xcodebuild -workspace Example/KIF-Quick.xcworkspace -scheme KIF-Quick-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' ONLY_ACTIVE_ARCH=NO test
+```
+This is how [Travis][travis-url] runs them to keep us honest, see [.travis.yml](https://github.com/doordash/KIF-Quick/blob/master/.travis.yml)
 
 ## Author
 
