@@ -497,7 +497,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C6348530B11D156F9AFD057 /* Pods-KIF-Quick_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "KIF-Quick/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -511,7 +510,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A21CD7F4FDA89BF7E9528EC6 /* Pods-KIF-Quick_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "KIF-Quick/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -525,7 +523,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09D4EF7FF8E4FC8054709CE6 /* Pods-KIF-Quick_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIF-Quick_Example.app/KIF-Quick_Example";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -543,7 +540,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C79DFC3DC5F723412658D1B3 /* Pods-KIF-Quick_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIF-Quick_Example.app/KIF-Quick_Example";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
