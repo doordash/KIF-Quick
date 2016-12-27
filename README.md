@@ -89,6 +89,12 @@ or you can specify this branch in your Podfile:
 
 ## Contributors
 
+| [<img src="https://avatars.githubusercontent.com/u/2940471?v=3&s=100" width="100px;"/><br /><sub>Ian Luo</sub>](https://github.com/lokae0)<br />[💻](https://github.com/doordash/KIF-Quick/commits?author=lokae0) |
+| :---: |
+
+This project follows the [all-contributors][all-contributors] specification.
+Contributions of any kind welcome!
+
 https://github.com/doordash/KIF-Quick/graphs/contributors
 
 ## Author
@@ -108,3 +114,4 @@ KIF-Quick is available under the MIT license. See the LICENSE file for more info
 [mit-badge]: https://img.shields.io/badge/License-MIT-blue.svg?style=flat
 [platform-badge]: https://img.shields.io/cocoapods/p/KIF-Quick.svg?style=flat
 [pod-url]: http://cocoapods.org/pods/KIF-Quick
+[all-contributors]: https://github.com/kentcdodds/all-contributors
