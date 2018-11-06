@@ -1,0 +1,2 @@
+github "Quick/Quick" ~> 1.0
+github "kif-framework/KIF" ~> 3.7.4
