@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ID-Xi-DYH">
-                                <rect key="frame" x="44" y="318" width="287" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ID-Xi-DYH">
+                                <rect key="frame" x="44" y="318.5" width="287" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="287" id="W1g-8Z-abt"/>
                                 </constraints>
@@ -31,22 +29,30 @@
                                     <action selector="onTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nTV-I3-1hi"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter some text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45W-aR-3Wn">
+                                <rect key="frame" x="44" y="259.5" width="287" height="34"/>
+                                <accessibility key="accessibilityConfiguration" hint="text_field" identifier="text_field" label="text_field"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="45W-aR-3Wn" firstAttribute="leading" secondItem="6ID-Xi-DYH" secondAttribute="leading" id="Brx-ie-fiY"/>
+                            <constraint firstItem="45W-aR-3Wn" firstAttribute="centerX" secondItem="6ID-Xi-DYH" secondAttribute="centerX" id="M9X-By-m5k"/>
                             <constraint firstItem="6ID-Xi-DYH" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="OMz-gE-ule"/>
+                            <constraint firstItem="45W-aR-3Wn" firstAttribute="trailing" secondItem="6ID-Xi-DYH" secondAttribute="trailing" id="g20-Mm-gAI"/>
+                            <constraint firstItem="6ID-Xi-DYH" firstAttribute="top" secondItem="45W-aR-3Wn" secondAttribute="bottom" constant="25" id="j3i-vJ-yep"/>
                             <constraint firstItem="6ID-Xi-DYH" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="pWO-ng-uhA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="45W-aR-3Wn" id="sNM-LY-aNQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20.5" y="41.5"/>
+            <point key="canvasLocation" x="29.710144927536234" y="27.790178571428569"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
-    </simulatedMetricsContainer>
 </document>

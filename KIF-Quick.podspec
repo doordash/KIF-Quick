@@ -13,9 +13,10 @@ Write Quick specs to drive KIF actors through user interface actions.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Paul Zabelin' => 'paulz@doordash.com' }
   s.source           = { :git => 'https://github.com/doordash/KIF-Quick.git', :tag => s.version.to_s }
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '13.0'
+  s.swift_version = '5.0'
   s.source_files = 'KIF-Quick/Classes'
   s.framework = 'XCTest'
   s.dependency 'KIF', '~> 3.0'
-  s.dependency 'Quick', '~> 1.0'
+  s.dependency 'Quick', '~> 1.3.2'
 end
