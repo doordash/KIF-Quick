@@ -76,3 +76,10 @@ open class KIFSpec: QuickSpec {
         KIFSpec.currentKIFActorDelegate = self
     }
 }
+
+public extension KIFUIViewTestActor {
+    func replaceText(_ text: String) {
+        clearText()
+        enterText(text)
+    }
+}

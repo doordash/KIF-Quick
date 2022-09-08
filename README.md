@@ -34,10 +34,19 @@ class MainViewSpec: KIFSpec {
     override func spec() {
         describe("example app") {
             context("main view") {
+                it("should have necessary views") {
+                    viewTester().usingLabel("Tap Me").waitForView()
+                    viewTester().usingLabel("text_field").waitForView()
+                }
+                context("inject data to view") {
+                    it("should allow data injection") {
+                        viewTester().usingLabel("text_field").replaceText("Test Message")
+                    }
+                }
                 context("tap") {
-                    it("should change to Thank you") {
+                    it("should be grateful") {
                         viewTester().usingLabel("Tap Me").tap()
-                        viewTester().usingLabel("Thank you!").waitForView()
+                        viewTester().usingLabel("Test Message").waitForView()
                     }
                 }
             }
@@ -69,7 +78,7 @@ Test Suite KIF-Quick_Tests.xctest started
 SampleSpec
     ✓ example_app__main_view__should_have_a_button (0.003 seconds)
     ✓ example_app__main_view__tap__should_be_grateful (0.581 seconds)
-	 Executed 2 tests, with 0 failures (0 unexpected) in 0.584 (0.586) seconds
+     Executed 2 tests, with 0 failures (0 unexpected) in 0.584 (0.586) seconds
 ```
 where nested Quick contexts concatenated to give full KIF test name. This allows to pinpoint location of possible failures when they happen and have readable English like sentenses describing the functionality.
 
@@ -106,7 +115,7 @@ https://github.com/doordash/KIF-Quick/graphs/contributors
 
 KIF-Quick is available under the MIT license. See the LICENSE file for more info.
 
-[swift-badge]: https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat
+[swift-badge]: https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat
 [swift-url]: https://swift.org
 [travis-badge]: http://img.shields.io/travis/doordash/KIF-Quick.svg?style=flat
 [travis-url]: https://travis-ci.org/doordash/KIF-Quick
