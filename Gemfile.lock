@@ -80,7 +80,7 @@ GEM
     pusher-client (0.6.2)
       json
       websocket (~> 1.0)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     travis (1.8.4)
       backports
       faraday (~> 0.9)
@@ -93,7 +93,7 @@ GEM
       typhoeus (~> 0.6, >= 0.6.8)
     typhoeus (0.8.0)
       ethon (>= 0.8.0)
-    tzinfo (1.2.2)
+    tzinfo (1.2.11)
       thread_safe (~> 0.1)
     websocket (1.2.3)
     xcodeproj (1.4.1)
